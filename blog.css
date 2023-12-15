@@ -53,7 +53,6 @@ body {
 
 .btn:hover {
     color: white;
-    background: red;
     padding: .75rem 2rem;
 }
 
@@ -62,14 +61,16 @@ a {
 }
 
 nav {
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 1rem;
+    width: 100%;
+    margin-top: -49px;
+    position: fixed;
+    background-color: white;
     height: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 24rem;
+    border-bottom: 1px solid black;
+    z-index: 10;
 }
 
 .nav_logo {
@@ -77,6 +78,7 @@ nav {
     font-weight: 600;
     color: var(--text-dark);
     margin-top: -10px;
+    margin-left: 30px;
 }
 
 .nav_links {
@@ -96,9 +98,7 @@ nav {
 }
 
 .link a:hover {
-    background: red;
-    color: var(--white);
-    padding: .75rem 2rem;
+    color: blue;
     border-radius: 2rem;
     border-color: black;
 }
@@ -118,6 +118,7 @@ nav {
     background: #f9f9f9;
     height: 500px;
     margin-top: 50px;
+    padding-top: 50px;
 }
 
 .services .card{

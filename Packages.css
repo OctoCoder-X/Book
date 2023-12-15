@@ -17,7 +17,7 @@ body{
     --text-light: #64748b;
     --extra-light: #f1f5f9;
     --white: #ffffff; 
-    --max-width: 1200px;
+    /* --max-width: 1200px; */
 }
 
 .section_container{
@@ -53,7 +53,6 @@ body{
 
 .btn:hover {
     color: white;
-    background: red;
     padding: .75rem 2rem;
 }
 
@@ -62,21 +61,24 @@ a{
 }
 
 nav {
-   max-width: var(--max-width);
-   margin: auto;
-   padding: 1rem;
-    height: 100px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    background-color: white;
+    height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 20rem;
+    border-bottom: 1px solid black;
+    z-index: 10;
 }
 
-.nav_logo{
+.nav_logo {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-dark);
     margin-top: -10px;
+    margin-left: 30px;
 }
 
 .nav_links{
@@ -96,11 +98,14 @@ nav {
 }
 
 .link a:hover{
-    background: red;
-    color: var(--white);
+    color: blue;
     padding: .75rem 2rem;
     border-radius: 2rem;
     border-color: black;
+}
+
+.packages{
+    padding-top: 120px;
 }
 
 .main-txt h1{

@@ -17,7 +17,7 @@ body {
     --text-light: #64748b;
     --extra-light: #f1f5f9;
     --white: #ffffff;
-    --max-width: 1200px;
+    --max-width: 100%;
 }
 
 .section_container {
@@ -53,7 +53,6 @@ body {
 
 .btn:hover {
     color: white;
-    background: linear-gradient(red, blue, y);
     padding: .75rem 2rem;
 }
 
@@ -62,14 +61,16 @@ a {
 }
 
 nav {
-    max-width: var(--max-width);
+    width: 100%;
     margin: auto;
-    padding: 1rem;
+    position: fixed;
+    background-color: white;
     height: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 24rem;
+    border-bottom: 1px solid black;
+    z-index: 10;
 }
 
 .nav_logo {
@@ -77,6 +78,7 @@ nav {
     font-weight: 600;
     color: var(--text-dark);
     margin-top: -10px;
+    margin-left: 30px;
 }
 
 .nav_links {
@@ -95,13 +97,16 @@ nav {
     transition: 0.3s;
 }
 
-/* .link a:hover {
-    background: red;
-    color: var(--white);
-    padding: .75rem 2rem;
+.link a:hover {
+    color: blue;
     border-radius: 2rem;
     border-color: black;
-} */
+}
+
+.link a:hover::before{
+    content: '';
+    border-bottom: 2px solid pink;
+}
 
 .image-container {
     position: relative;
@@ -218,25 +223,6 @@ nav {
     padding: 15px;
 }
 
-@media (max-width:850px) {
-    .home {
-        background-position: 50%;
-    }
-}
-
-@media (max-width:450px) {
-    .home .content h5 {
-        font-size: 25px;
-    }
-
-    .home .content h1 {
-        font-size: 38px;
-    }
-
-    .home .content p {
-        font-size: 13px;
-    }
-}
 
 .content-overlay {
     position: absolute;

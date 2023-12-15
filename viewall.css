@@ -53,7 +53,6 @@ body{
 
 .btn:hover {
     color: white;
-    background: red;
     padding: .75rem 2rem;
 }
 
@@ -62,21 +61,24 @@ a{
 }
 
 nav {
-   max-width: var(--max-width);
-   margin: auto;
-   padding: 1rem;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    background-color: white;
     height: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 24rem;
+    border-bottom: 1px solid black;
+    z-index: 10;
 }
 
-.nav_logo{
+.nav_logo {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-dark);
     margin-top: -10px;
+    margin-left: 30px;
 }
 
 .nav_links{
@@ -96,8 +98,7 @@ nav {
 }
 
 .link a:hover{
-    background: red;
-    color: var(--white);
+    color: blue;
     padding: .75rem 2rem;
     border-radius: 2rem;
     border-color: black;
@@ -106,6 +107,7 @@ nav {
 
 .memories{
     background-color: var(--extra-light);
+    padding-top: 50px;
     /* margin-bottom: 30px; */
 }
 
